@@ -36,6 +36,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
 .bb-backdrop:hover,.bb-backdrop:active{transform:none!important;box-shadow:none!important;filter:none!important}
 
 #app{min-height:100vh}
+#app .bb-bad{border-color:#D64545!important;box-shadow:0 0 0 3px rgba(214,69,69,.18)!important}
 @media (max-width: 760px){
   #app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(42px,12vw,64px)!important;letter-spacing:-1.5px!important;line-height:1!important}
   #app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,11vw,56px)!important;letter-spacing:-1.5px!important;line-height:1.02!important}
@@ -52,6 +53,9 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
   #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
   #app nav > div > span[aria-hidden]{display:none!important}
   #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
   #app span[style*="letter-spacing: 3px"]{letter-spacing:1.5px!important}
   #app [style*="height: 620px"],#app [style*="height: 640px"]{height:460px!important}
   #app [style*="height: 600px"]{height:380px!important}
