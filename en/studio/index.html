@@ -55,6 +55,26 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
 
 #app{min-height:100vh}
 #app .bb-bad{border-color:#D64545!important;box-shadow:0 0 0 3px rgba(214,69,69,.18)!important}
+#app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(44px,min(6.2vw,10.5vh),88px)!important;letter-spacing:-0.03em!important}
+#app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,min(5vw,9vh),64px)!important;letter-spacing:-0.025em!important}
+#app [style*="font-size: 64px"],#app [style*="font-size: 60px"],#app [style*="font-size: 56px"]{font-size:clamp(32px,4vw,52px)!important;letter-spacing:-0.02em!important}
+#app [style*="font-size: 52px"],#app [style*="font-size: 48px"],#app [style*="font-size: 44px"]{font-size:clamp(28px,3.2vw,42px)!important}
+@media (max-width: 1120px){
+  #app nav{border-radius:24px!important;padding:8px 8px 8px 16px!important;justify-content:space-between!important;flex-wrap:wrap!important}
+  #app nav .bb-burger{display:flex!important}
+  #app nav > div{display:none!important;width:100%;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:8px 4px 6px!important;font-size:16px!important}
+  #app nav[data-open="true"] > div{display:flex!important}
+  #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
+  #app nav > div > span[aria-hidden]{display:none!important}
+  #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
+}
+/*BRAND*/#app a[aria-label] img[alt="Basbaya"]{height:15px!important}
+#app a[aria-label] img[alt=""][src*="icon_"]{height:36px!important}
+#app a[aria-label] span > img[alt="Basbaya"]{height:14px!important}
+/*/BRAND*/
 @media (max-width: 760px){
   #app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(42px,12vw,64px)!important;letter-spacing:-1.5px!important;line-height:1!important}
   #app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,11vw,56px)!important;letter-spacing:-1.5px!important;line-height:1.02!important}
@@ -89,5 +109,6 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
 <noscript><p style="font-family:sans-serif;padding:24px">Basbaya · info@basbaya.com · <a href="https://www.trendyol.com/magaza/basbaya-m-1345724">Trendyol</a></p></noscript>
 
 <script type="module" src="/assets/js/main.js"></script>
+<script src="/assets/js/bb-chat.js" defer></script>
 </body>
 </html>
