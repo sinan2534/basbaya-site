@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spare Parts – We print the part you can’t find | Basbaya</title>
+<meta name="description" content="We redesign broken, lost or discontinued parts to measure and 3D print them in our Istanbul workshop.">
+<link rel="canonical" href="https://basbaya.com/en/spare-parts/">
+<link rel="alternate" hreflang="tr" href="https://basbaya.com/yedek-parca/">
+<link rel="alternate" hreflang="en" href="https://basbaya.com/en/spare-parts/">
+<meta property="og:title" content="Spare Parts – We print the part you can’t find | Basbaya"><meta property="og:description" content="We redesign broken, lost or discontinued parts to measure and 3D print them in our Istanbul workshop."><meta property="og:type" content="website">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1E4E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F3EC}
+a{color:#0A1433}a:hover{color:#2B3F8C}
+@keyframes bbRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes bbIn{from{opacity:0}to{opacity:1}}
+@keyframes bbKen{from{transform:scale(1.12)}to{transform:scale(1.0)}}
+@keyframes bbText{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes bbReveal{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
+@keyframes bbScale{from{transform:scale(.82);border-radius:80px}to{transform:scale(1);border-radius:36px}}
+@keyframes bbBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.bb-rise{animation:bbRise .9s cubic-bezier(.2,.7,.2,1) both}
+.bb-d1{animation-delay:.12s}.bb-d2{animation-delay:.24s}.bb-d3{animation-delay:.36s}
+.bb-slide{animation:bbIn .8s ease both}
+.bb-ken{animation:bbKen 6s ease-out both}
+.bb-text{animation:bbText .8s .25s cubic-bezier(.2,.7,.2,1) both}
+.bb-bar{transform-origin:left center;animation:bbBar 5s linear both}
+@supports (animation-timeline: view()){
+.bb-reveal{animation:bbReveal linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.bb-scale{animation:bbScale linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+}
+@media (prefers-reduced-motion: reduce){.bb-rise,.bb-slide,.bb-ken,.bb-text,.bb-bar,.bb-reveal,.bb-scale{animation:none!important}}
+a,button,[role=tab]{transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s ease,filter .2s ease,background-color .2s ease,border-color .2s ease}
+a[style*="border-radius: 999px"]:hover,button:hover{box-shadow:0 10px 26px rgba(10,20,51,.22);filter:brightness(1.08)}
+a:active,button:active{box-shadow:0 0 0 6px rgba(76,123,244,.28)}
+:focus-visible{outline:3px solid #4C7BF4;outline-offset:3px;border-radius:12px}
+nav a:hover{background-color:rgba(127,140,180,.16)}
+a[style*="overflow: hidden"] img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+a[style*="overflow: hidden"]:hover img{transform:scale(1.05)}
+a[style*="overflow: hidden"]:hover{box-shadow:0 24px 60px rgba(10,20,51,.28)}
+a img[style*="aspect-ratio"]{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+a:hover img[style*="aspect-ratio"]{transform:scale(1.02);box-shadow:0 18px 44px rgba(10,20,51,.22)}
+input,select,textarea{transition:border-color .2s ease,box-shadow .2s ease}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!important;box-shadow:0 0 0 4px rgba(76,123,244,.25)}
+@media (prefers-reduced-motion: reduce){a,button,img{transition:none!important}}
+.bb-backdrop:hover,.bb-backdrop:active{transform:none!important;box-shadow:none!important;filter:none!important}
+
+#app{min-height:100vh}
+#app .bb-bad{border-color:#D64545!important;box-shadow:0 0 0 3px rgba(214,69,69,.18)!important}
+#app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(44px,min(6.2vw,10.5vh),88px)!important;letter-spacing:-0.03em!important}
+#app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,min(5vw,9vh),64px)!important;letter-spacing:-0.025em!important}
+#app [style*="font-size: 64px"],#app [style*="font-size: 60px"],#app [style*="font-size: 56px"]{font-size:clamp(32px,4vw,52px)!important;letter-spacing:-0.02em!important}
+#app [style*="font-size: 52px"],#app [style*="font-size: 48px"],#app [style*="font-size: 44px"]{font-size:clamp(28px,3.2vw,42px)!important}
+@media (max-width: 1220px){
+  #app nav{border-radius:24px!important;padding:8px 8px 8px 16px!important;justify-content:space-between!important;flex-wrap:wrap!important}
+  #app nav .bb-burger{display:flex!important}
+  #app nav > div{display:none!important;width:100%;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:8px 4px 6px!important;font-size:16px!important}
+  #app nav[data-open="true"] > div{display:flex!important}
+  #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
+  #app nav > div > span[aria-hidden]{display:none!important}
+  #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
+}
+/*BRAND*/#app a[aria-label] img[alt="Basbaya"]{height:15px!important}
+#app a[aria-label] img[alt=""][src*="icon_"]{height:36px!important}
+#app a[aria-label] span > img[alt="Basbaya"]{height:14px!important}
+@media (min-width: 1221px) and (max-width: 1380px){#app nav > div{gap:2px!important}#app nav > div > a:not([style*="background: rgb(10"]):not([style*="#0A1433"]){padding:10px 10px!important}#app nav > div > span[aria-hidden]{margin:0 4px!important}#app nav{gap:10px!important;padding-left:18px!important}}
+/*/BRAND*/
+@media (max-width: 760px){
+  #app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(42px,12vw,64px)!important;letter-spacing:-1.5px!important;line-height:1!important}
+  #app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,11vw,56px)!important;letter-spacing:-1.5px!important;line-height:1.02!important}
+  #app [style*="font-size: 64px"],#app [style*="font-size: 60px"],#app [style*="font-size: 56px"]{font-size:clamp(34px,10vw,48px)!important;letter-spacing:-1px!important;line-height:1.04!important}
+  #app [style*="font-size: 52px"],#app [style*="font-size: 48px"],#app [style*="font-size: 44px"]{font-size:clamp(30px,8.5vw,40px)!important;letter-spacing:-1px!important}
+  #app [style*="font-size: 40px"],#app [style*="font-size: 36px"],#app [style*="font-size: 34px"]{font-size:28px!important}
+  #app section,#app footer > div,#app header{padding-left:16px!important;padding-right:16px!important}
+  #app section[style*="padding: 104px"],#app div[style*="padding: 104px"],#app div[style*="padding: 96px"],#app section[style*="padding: 96px"]{padding-top:64px!important;padding-bottom:64px!important}
+  #app [style*="padding: 56px"],#app [style*="padding: 52px 48px"],#app [style*="padding: 48px"],#app [style*="padding: 44px"]{padding:28px!important}
+  #app nav{border-radius:24px!important;padding:8px 8px 8px 16px!important;justify-content:space-between!important;flex-wrap:wrap!important}
+  #app nav .bb-burger{display:flex!important}
+  #app nav > div{display:none!important;width:100%;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:8px 4px 6px!important;font-size:16px!important}
+  #app nav[data-open="true"] > div{display:flex!important}
+  #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
+  #app nav > div > span[aria-hidden]{display:none!important}
+  #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
+  #app span[style*="letter-spacing: 3px"]{letter-spacing:1.5px!important}
+  #app [style*="height: 620px"],#app [style*="height: 640px"]{height:460px!important}
+  #app [style*="height: 600px"]{height:380px!important}
+  #app [style*="min-height: 760px"]{min-height:620px!important}
+  #app .bb-text{left:24px!important;right:24px!important;bottom:84px!important}
+  #app [role=tablist][style*="left: 56px"]{left:24px!important}
+  #app [role=dialog]{border-radius:20px!important}
+}
+
+[hidden]{display:none!important}
+.yp-wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.yp-hero{padding:72px 0 56px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px;align-items:end}
+.yp-eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:3px;padding:9px 16px;border-radius:999px;border:1px solid #C9C1AE;color:#3B4565;margin-bottom:24px}
+.yp-hero h1{margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(38px,min(4.6vw,9vh),64px);line-height:1;letter-spacing:-0.03em;text-wrap:balance}
+.yp-lead{font-size:18px;line-height:1.6;color:#3B4565;margin:0 0 24px}
+.yp-btns{display:flex;flex-wrap:wrap;gap:12px}
+.yp-btn{font:600 16px Inter,system-ui,sans-serif;border-radius:999px;padding:16px 26px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:box-shadow .2s ease,filter .2s ease}
+.yp-btn:hover{box-shadow:0 10px 26px rgba(10,20,51,.22);filter:brightness(1.08)}
+.yp-btn:active{box-shadow:0 0 0 6px rgba(76,123,244,.28)}
+.yp-dark{background:#0A1433;color:#fff;border:0}.yp-line{background:transparent;color:#0A1433;border:1.5px solid #0A1433}
+.yp-sec{padding:72px 0}
+.yp-k{font-size:13px;font-weight:700;letter-spacing:3px;color:#4A5578;margin:0 0 12px}
+.yp-h{margin:0 0 32px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(30px,3.6vw,48px);line-height:1.05;letter-spacing:-0.02em;max-width:760px}
+.yp-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.yp-card{background:#fff;border:1px solid #E2DCCD;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:8px}
+.yp-card h3{margin:0;font-family:'Space Grotesk',sans-serif;font-size:22px}.yp-card p{margin:0;font-size:15.5px;line-height:1.6;color:#3B4565}
+.yp-num{font-size:12px;font-weight:700;letter-spacing:2px;color:#4A5578}
+.yp-note{margin:20px 0 0;display:flex;gap:12px;align-items:flex-start;background:#EFEADF;border-radius:20px;padding:16px 20px;font-size:14.5px;line-height:1.55;color:#3B4565}
+.yp-shophead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px}.yp-shophead .yp-lead{margin:0}
+.yp-prods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.yp-prod{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:#fff;border:1px solid #E2DCCD;border-radius:28px;overflow:hidden;text-decoration:none;color:inherit;transition:box-shadow .2s ease}
+.yp-prod:hover{box-shadow:0 14px 36px rgba(10,20,51,.14)}
+.yp-prod img{width:100%;height:100%;min-height:260px;max-height:340px;object-fit:cover;display:block}
+.yp-prod div{padding:26px;display:flex;flex-direction:column;gap:10px}.yp-prod h3{margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;line-height:1.2}.yp-prod p{margin:0;font-size:15px;line-height:1.55;color:#3B4565}
+.yp-prod span{margin-top:auto;font-weight:600;font-size:15px}
+.yp-dark-sec{background:#0A1433;color:#fff}.yp-dark-sec .yp-k{color:#C9D3F0}
+.yp-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.yp-steps li{background:rgba(255,255,255,.06);border:1px solid rgba(201,211,240,.2);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.yp-steps h3{margin:0 0 6px;font-size:18px}.yp-steps p{margin:0;font-size:15px;line-height:1.55;color:#DCE2F3}
+.yp-step{width:40px;height:40px;border-radius:99px;background:#fff;color:#0A1433;font-weight:700;display:flex;align-items:center;justify-content:center}
+.yp-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.yp-tips{background:#fff;border:1px solid #E2DCCD;border-radius:28px;padding:32px}
+.yp-tips ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.yp-tips li{position:relative;padding-left:28px;font-size:15.5px;line-height:1.55;color:#3B4565}
+.yp-tips li:before{content:"✓";position:absolute;left:0;top:0;font-weight:700;color:#0A1433}
+.yp-gal{border:2px dashed #C9C1AE;border-radius:28px;padding:32px;display:flex;flex-direction:column;justify-content:center;gap:14px;min-height:280px;background:repeating-linear-gradient(135deg,#F6F3EC 0 14px,#F1EDE3 14px 28px)}
+.yp-pair{display:flex;gap:12px;align-items:center}
+.yp-ph{flex:1;aspect-ratio:1;border-radius:18px;background:#fff;border:1px solid #E2DCCD;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#6B7391}
+.yp-badge{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:2px;background:#0A1433;color:#fff;border-radius:999px;padding:7px 12px}
+.yp-gal p{margin:0;font-size:15.5px;line-height:1.55;color:#3B4565}
+.yp-formbox{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:40px;align-items:start}
+.yp-panel{background:#fff;border:1px solid #E2DCCD;border-radius:32px;padding:36px}
+#yp-form{display:flex;flex-direction:column;gap:18px}
+.yp-grid2,.yp-grid3,.yp-grid2b{display:grid;gap:16px}.yp-grid2{grid-template-columns:1fr 1fr}.yp-grid2b{grid-template-columns:1fr 140px}.yp-grid3{grid-template-columns:1fr 1fr 1fr}
+.yp-l{display:flex;flex-direction:column;gap:8px;font-size:14.5px;font-weight:600}
+.yp-l input,.yp-l textarea{font:400 15.5px Inter,system-ui,sans-serif;padding:13px 14px;border:1px solid #C9C1AE;border-radius:12px;background:#fff;color:#0A1433;min-width:0;box-sizing:border-box;width:100%}
+.yp-l textarea{resize:vertical}.yp-l input:focus,.yp-l textarea:focus{outline:none;border-color:#0A1433;box-shadow:0 0 0 3px rgba(76,123,244,.18)}
+.yp-file{border-style:dashed!important;background:#F6F3EC!important}
+.yp-l small{font-weight:400;font-size:13px;color:#6B7391}
+.yp-bad{border-color:#D64545!important;box-shadow:0 0 0 3px rgba(214,69,69,.18)!important}
+.yp-err{margin:0;color:#B83232;font-size:14px}.yp-msg{font-weight:500;font-size:13px;color:#B83232}
+.yp-ok{text-align:center;padding:40px 10px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.yp-ok h3{margin:0;font-family:'Space Grotesk',sans-serif;font-size:28px}.yp-ok p{margin:0 0 10px;color:#3B4565;font-size:16px}
+.yp-okic{width:64px;height:64px;border-radius:99px;background:#0A1433;color:#fff;font-size:30px;display:flex;align-items:center;justify-content:center}
+.yp-faq{border-bottom:1px solid #E2DCCD;padding:18px 0}.yp-faq summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.yp-faq summary::-webkit-details-marker{display:none}.yp-faq summary:after{content:"+";font-size:22px;line-height:1;transition:transform .2s}.yp-faq[open] summary:after{transform:rotate(45deg)}
+.yp-faq p{margin:10px 0 0;color:#3B4565;line-height:1.6;font-size:15.5px;max-width:760px}
+.bb-reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.bb-reveal.bb-in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.bb-reveal{opacity:1;transform:none;transition:none}}
+@media (max-width: 1000px){.yp-prods{grid-template-columns:1fr}.yp-hero,.yp-formbox,.yp-two{grid-template-columns:1fr}.yp-cards{grid-template-columns:1fr 1fr}.yp-steps{grid-template-columns:1fr 1fr}}
+@media (max-width: 640px){.yp-wrap{padding:0 16px}.yp-hero{padding:48px 0 40px;gap:24px}.yp-sec{padding:56px 0}.yp-cards,.yp-steps,.yp-grid2,.yp-grid3{grid-template-columns:1fr}.yp-grid2b{grid-template-columns:1fr 110px}.yp-prod{grid-template-columns:1fr}.yp-prod img{max-height:300px;min-height:0;aspect-ratio:4/3}.yp-panel,.yp-tips,.yp-gal{padding:22px;border-radius:24px}.yp-eyebrow{letter-spacing:1.5px}}
+</style>
+</head>
+<body>
+<div id="app" data-page="YedekParca_en"><div style="font-family: Inter, system-ui, sans-serif; color: rgb(10, 20, 51); background: rgb(246, 243, 236); min-height: 100vh;">
+<header style="padding: 20px 24px 0px;"><nav aria-label="Main menu" data-open="false" style="max-width: 1240px; margin: 0px auto; padding: 12px 14px 12px 22px; border-radius: 999px; background: rgb(255, 255, 255); border: 1px solid rgb(226, 220, 205); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px;"><a href="/en/" aria-label="Basbaya home" style="display: flex; align-items: center; gap: 12px; text-decoration: none;"><img alt="" src="/assets/img/icon_navy.png" style="height: 34px; width: auto; display: block;"><img alt="Basbaya" src="/assets/img/word_navy.svg" style="height: 13px; width: auto; display: block;"></a><button type="button" class="bb-burger" aria-label="Menu" aria-expanded="false" style="display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 999px; border: 1px solid rgba(127, 140, 180, 0.4); background: transparent; color: inherit; cursor: pointer; padding: 0px;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 15px; font-weight: 500;"><a href="/en/" style="text-decoration: none; padding: 10px 14px; border-radius: 999px;">Home</a><a href="/en/basbaya-3d/" style="text-decoration: none; padding: 10px 14px; border-radius: 999px;">Basbaya 3D</a><a href="/en/spare-parts/" aria-current="page" style="text-decoration: none; padding: 10px 14px; border-radius: 999px; background: rgb(239, 234, 223); font-weight: 600;">Spare Parts</a><a href="/en/studio/" style="text-decoration: none; padding: 10px 14px; border-radius: 999px;">Basbaya Studio</a><a href="/en/about/" style="text-decoration: none; padding: 10px 14px; border-radius: 999px;">About</a><a href="/en/contact/" style="text-decoration: none; padding: 10px 14px; border-radius: 999px;">Contact</a><span aria-hidden="true" style="width: 1px; height: 24px; background: currentcolor; opacity: 0.2; margin: 0px 6px;"></span><div style="position: relative;"><button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language" id="bb-langbtn" style="font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 10px 12px; border-radius: 999px; letter-spacing: 1px; color: inherit; background: transparent; border: 1px solid rgba(127, 140, 180, 0.4);"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"></path></svg>EN<span aria-hidden="true" style="font-size: 10px;">▾</span></button><div role="menu" id="bb-langmenu" hidden style="position: absolute; right: 0px; top: calc(100% + 10px); z-index: 50; min-width: 220px; background: rgb(255, 255, 255); border: 1px solid rgb(226, 220, 205); border-radius: 18px; padding: 8px; box-shadow: rgba(10, 20, 51, 0.22) 0px 18px 50px; display: flex; flex-direction: column; gap: 2px;"><a role="menuitem" href="/yedek-parca/" style="text-decoration: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 12px; color: rgb(10, 20, 51); font-size: 15px; font-weight: 600;">Türkçe</a><a role="menuitem" href="/en/spare-parts/" style="text-decoration: none; background: rgb(239, 234, 223); display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 12px; color: rgb(10, 20, 51); font-size: 15px; font-weight: 600;">English<span aria-hidden="true" style="font-weight: 700;">✓</span></a><span aria-disabled="true" style="display: flex; justify-content: space-between; gap: 12px; padding: 11px 14px; border-radius: 12px; color: rgb(107, 115, 145); font-size: 15px;">Deutsch<span style="font-size: 12px;">soon</span></span><span aria-disabled="true" style="display: flex; justify-content: space-between; gap: 12px; padding: 11px 14px; border-radius: 12px; color: rgb(107, 115, 145); font-size: 15px;">Русский<span style="font-size: 12px;">soon</span></span><span aria-disabled="true" style="display: flex; justify-content: space-between; gap: 12px; padding: 11px 14px; border-radius: 12px; color: rgb(107, 115, 145); font-size: 15px;">العربية<span style="font-size: 12px;">soon</span></span></div></div><a href="https://www.trendyol.com/magaza/basbaya-m-1345724" style="text-decoration: none; background: rgb(10, 20, 51); color: rgb(255, 255, 255); padding: 12px 20px; border-radius: 999px; font-weight: 600;">Our Trendyol Store</a></div></nav></header>
+<main>
+<section class="yp-wrap yp-hero">
+ <div><span class="yp-eyebrow">BASBAYA 3D · SPARE PARTS</span><h1>Can’t find the part?<br>We’ll print it.</h1></div>
+ <div><p class="yp-lead">We redesign parts that broke, went missing or are no longer made, to measure, and print them in our Istanbul workshop. Ask us before you throw the whole thing away.</p><div class="yp-btns"><a class="yp-btn yp-dark" href="#talep">Request a part ↓</a><a class="yp-btn yp-line" href="#surec">How it works</a></div></div>
+</section>
+<section class="yp-wrap yp-sec" style="padding-top:24px"><p class="yp-k">WHAT CAN WE PRINT?</p><h2 class="yp-h">One small part can save a whole appliance.</h2><div class="yp-cards"><div class="yp-card bb-reveal"><span class="yp-num">01</span><h3>Home appliances</h3><p>Mixer and blender fittings, vacuum heads and clips, dishwasher basket wheels, lid latches.</p></div><div class="yp-card bb-reveal"><span class="yp-num">02</span><h3>Furniture and home</h3><p>Shelf pins, cabinet handles, hinge covers, furniture feet, curtain rail parts.</p></div><div class="yp-card bb-reveal"><span class="yp-num">03</span><h3>Car interior</h3><p>Dashboard and console clips, small covers, cup and phone holders and other trim parts.</p></div><div class="yp-card bb-reveal"><span class="yp-num">04</span><h3>Electronics and hobby</h3><p>Remote battery covers, buttons, housings and brackets, camera and gear mounts.</p></div><div class="yp-card bb-reveal"><span class="yp-num">05</span><h3>Toys and collectibles</h3><p>Lost or broken toy parts and missing pieces for models and collectibles.</p></div><div class="yp-card bb-reveal"><span class="yp-num">06</span><h3>Made-to-measure</h3><p>Holders, spacers, adapters or organisers that don’t exist yet: send the size, we’ll design it.</p></div></div><p class="yp-note"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg><span>We don’t print safety-critical parts (brakes, steering, gas and fuel lines, parts carrying high heat or mains power). We don’t reproduce original brand logos or names on parts.</span></p></section>
+<section class="yp-wrap yp-sec" style="padding-top:8px"><div class="yp-shophead"><div><p class="yp-k">IN THE STORE</p><h2 class="yp-h" style="margin-bottom:12px">Ready-made parts and compatible accessories</h2><p class="yp-lead" style="font-size:16.5px;max-width:640px">We add frequently requested parts and accessories that fit your devices to our Trendyol store. Not on the list? Send a request below.</p></div><a class="yp-btn yp-line" href="https://www.trendyol.com/magaza/basbaya-m-1345724" target="_blank" rel="noopener">Whole store ↗</a></div><div class="yp-prods"><a class="yp-prod bb-reveal" href="https://www.trendyol.com/basbaya/hair-dryer-uyumlu-sac-kurutma-makinesi-standi-p-1209114347" target="_blank" rel="noopener"><img src="/assets/img/dyson_stand.jpg" alt="Dyson-Compatible Hair Dryer Stand" loading="lazy"><div><h3>Dyson-Compatible Hair Dryer Stand</h3><p>Non-slip base, cable management and storage for attachments. Four colours.</p><span>View on Trendyol ↗</span></div></a><a class="yp-prod bb-reveal" href="https://www.trendyol.com/basbaya/ekstra-ince-uzun-supurge-ucu-25-cm-pencere-rayi-ve-dar-aralik-temizleme-aparati-p-1217241453" target="_blank" rel="noopener"><img src="/assets/img/supurge_ucu.jpg" alt="Extra-Slim Long Vacuum Nozzle (25 cm)" loading="lazy"><div><h3>Extra-Slim Long Vacuum Nozzle (25 cm)</h3><p>A thin, long crevice tool for sofa gaps, window tracks and tight spaces.</p><span>View on Trendyol ↗</span></div></a></div></section>
+<section class="yp-dark-sec" id="surec"><div class="yp-wrap yp-sec"><p class="yp-k">PROCESS</p><h2 class="yp-h">Your part in four steps.</h2><ol class="yp-steps"><li class="bb-reveal"><span class="yp-step">1</span><div><h3>Send photos and sizes</h3><p>Share a few photos of the part, the make and model of the device and any measurements you know.</p></div></li><li class="bb-reveal"><span class="yp-step">2</span><div><h3>We model it and quote</h3><p>We model the part to size in Bambu Studio and send you the price and timing.</p></div></li><li class="bb-reveal"><span class="yp-step">3</span><div><h3>Test print</h3><p>For parts that must fit precisely, we test-print first and check the fit.</p></div></li><li class="bb-reveal"><span class="yp-step">4</span><div><h3>We print and ship</h3><p>We print the approved part on our X2D, check it by hand and ship it.</p></div></li></ol></div></section>
+<section class="yp-wrap yp-sec"><div class="yp-two">
+ <div class="yp-tips bb-reveal"><p class="yp-k">TIPS</p><h2 class="yp-h" style="font-size:clamp(26px,2.6vw,34px);margin-bottom:20px">Good measurements, a part that fits first time.</h2><ul><li>Photograph the part next to a ruler or tape, from the top and the side.</li><li>If you have calipers, note hole diameters, wall thickness and overall size.</li><li>Keep every piece of the broken part; fitting them together helps a lot.</li><li>Add a photo of the model label on the back or underside of the device.</li><li>If needed, we may ask you to send us the broken part or its twin.</li></ul></div>
+ <div class="yp-gal bb-reveal"><span class="yp-badge">COMING SOON</span><p class="yp-k" style="margin:0">FROM THE WORKSHOP</p><h2 class="yp-h" style="font-size:clamp(26px,2.6vw,34px);margin:0">Parts we’ve printed</h2><div class="yp-pair"><div class="yp-ph">Before</div><span aria-hidden="true" style="font-size:22px">→</span><div class="yp-ph">After</div></div><p>We’ll show our first jobs here: the broken original and the part we printed to replace it, side by side.</p></div>
+</div></section>
+<section class="yp-wrap yp-sec" id="talep" style="padding-top:24px"><div class="yp-formbox">
+ <div><p class="yp-k">PART REQUEST</p><h2 class="yp-h">Tell us about the part.</h2><p class="yp-lead" style="font-size:16.5px">The more detail, the faster and more accurate the quote. Required fields are marked <span style="color:#D64545">*</span>.</p>
+ <div style="margin-top:28px"><p class="yp-k">FAQ</p><details class="yp-faq"><summary>How is the price set?</summary><p>By size, complexity and quantity. We give a firm price once we see the photos and sizes, and we don’t start without your approval.</p></details><details class="yp-faq"><summary>How long does it take?</summary><p>We include design and print time in the quote. Simple parts are much quicker.</p></details><details class="yp-faq"><summary>Will it be identical to the original?</summary><p>We design it to match the original’s size and function. Colour and surface texture may differ.</p></details><details class="yp-faq"><summary>What material do you use?</summary><p>PLA as standard. We check together whether it suits where the part will be used (heat, load).</p></details></div></div>
+ <div class="yp-panel"><form name="yedek-parca" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" id="yp-form" novalidate>
+<input type="hidden" name="form-name" value="yedek-parca"><p hidden><label>Bot <input name="bot-field"></label></p>
+<div class="yp-grid2"><label class="yp-l"><span>Device / product (make and model)<span aria-hidden="true" style="color:#D64545"> *</span></span><input type="text" name="cihaz" placeholder="e.g. Bosch MUM5 stand mixer" data-req="1"></label><label class="yp-l"><span>Which part?<span aria-hidden="true" style="color:#D64545"> *</span></span><input type="text" name="parca" placeholder="e.g. The plastic socket the dough hook fits into" data-req="1"></label></div>
+<div class="yp-grid2b"><label class="yp-l"><span>Measurements you know</span><input type="text" name="olcu" placeholder="e.g. Outer Ø 24 mm, hole 8 mm, height 15 mm"></label><label class="yp-l"><span>Quantity</span><input type="number" name="adet" min="1" value="1" inputmode="numeric"></label></div>
+<label class="yp-l"><span>Photo</span><input type="file" name="fotograf" accept="image/*" class="yp-file"><small>The part and, if possible, the model label (max 8 MB).</small></label>
+<label class="yp-l"><span>Anything else</span><textarea name="aciklama" rows="4"></textarea></label>
+<div class="yp-grid3"><label class="yp-l"><span>Full name<span aria-hidden="true" style="color:#D64545"> *</span></span><input type="text" name="ad" placeholder="" data-req="1"></label><label class="yp-l"><span>Email<span aria-hidden="true" style="color:#D64545"> *</span></span><input type="email" name="eposta" placeholder="" data-req="1"></label><label class="yp-l"><span>Phone</span><input type="tel" name="telefon" placeholder=""></label></div>
+<p class="yp-err" id="yp-neterr" hidden>Couldn’t send. Check your connection and try again, or email info@basbaya.com.</p>
+<button type="submit" class="yp-btn yp-dark" id="yp-send">Send request →</button>
+</form>
+<div id="yp-ok" class="yp-ok" hidden><div class="yp-okic">✓</div><h3>We got your request! 🙌</h3><p>We’ll review the photos and sizes and email you soon.</p><button type="button" class="yp-btn yp-line" id="yp-again">New request</button></div></div>
+</div></section>
+</main>
+<footer style="background: rgb(10, 20, 51); color: rgb(255, 255, 255);"><div style="max-width: 1240px; margin: 0px auto; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;"><div style="display: flex; align-items: center; gap: 14px;"><img alt="" src="/assets/img/icon_white.png" style="height: 30px; width: auto; display: block;"><img alt="Basbaya" src="/assets/img/word_white.svg" style="height: 12px; width: auto; display: block;"><span style="display: flex; align-items: center; gap: 8px; margin-left: 10px; padding-left: 18px; border-left: 1px solid rgba(201, 211, 240, 0.3);"><a href="https://instagram.com/basbayacom" target="_blank" rel="noopener" aria-label="Instagram @basbayacom" title="@basbayacom" style="text-decoration: none; color: inherit; height: 34px; box-sizing: border-box; display: flex; align-items: center; gap: 6px; padding: 0px 12px 0px 9px; border-radius: 999px; border: 1px solid rgba(201, 211, 240, 0.45); font-size: 13px; font-weight: 600;"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="16" height="16" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>3D</a><a href="https://instagram.com/basbaya.studio" target="_blank" rel="noopener" aria-label="Instagram @basbaya.studio" title="@basbaya.studio" style="text-decoration: none; color: inherit; height: 34px; box-sizing: border-box; display: flex; align-items: center; gap: 6px; padding: 0px 12px 0px 9px; border-radius: 999px; border: 1px solid rgba(201, 211, 240, 0.45); font-size: 13px; font-weight: 600;"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="16" height="16" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>Studio</a></span></div><div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px;"><a href="/en/" style="color: rgb(255, 255, 255); text-decoration: none;">Home</a><a href="/en/basbaya-3d/" style="color: rgb(255, 255, 255); text-decoration: none;">Basbaya 3D</a><a href="/en/studio/" style="color: rgb(255, 255, 255); text-decoration: none;">Basbaya Studio</a><a href="/en/contact/" style="color: rgb(255, 255, 255); text-decoration: none;">Contact</a><span style="color: rgb(201, 211, 240);">© 2026 Basbaya · Istanbul</span></div></div></footer>
+</div></div>
+<script>var M={"req": "Please fill in this field.", "mail": "Please enter a valid email address.", "big": "The photo must be under 8 MB.", "sending": "Sending…"};
+(function(){
+var nav=document.querySelector('nav'),bur=document.querySelector('.bb-burger');
+if(bur)bur.addEventListener('click',function(){var o=nav.getAttribute('data-open')==='true';nav.setAttribute('data-open',o?'false':'true');bur.setAttribute('aria-expanded',o?'false':'true');});
+var lb=document.getElementById('bb-langbtn'),lm=document.getElementById('bb-langmenu');
+function closeL(){lm.hidden=true;lb.setAttribute('aria-expanded','false');}
+if(lb&&lm){lb.addEventListener('click',function(e){e.stopPropagation();lm.hidden=!lm.hidden;lb.setAttribute('aria-expanded',lm.hidden?'false':'true');});
+document.addEventListener('click',function(e){if(!lm.hidden&&!lm.contains(e.target))closeL();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeL();});}
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('bb-in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px'}):null;
+document.querySelectorAll('.bb-reveal').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';if(io)io.observe(el);else el.classList.add('bb-in');});
+var f=document.getElementById('yp-form'),ok=document.getElementById('yp-ok'),btn=document.getElementById('yp-send'),ne=document.getElementById('yp-neterr');
+function mark(el,msg){el.classList.toggle('yp-bad',!!msg);el.setCustomValidity(msg||'');var lab=el.closest('label'),m=lab.querySelector('.yp-msg');if(msg){if(!m){m=document.createElement('span');m.className='yp-msg';lab.appendChild(m);}m.textContent=msg;}else if(m)m.remove();}
+f.querySelectorAll('input,textarea').forEach(function(el){el.addEventListener('input',function(){mark(el,'');});});
+f.addEventListener('submit',function(e){e.preventDefault();ne.hidden=true;var bad=null;
+f.querySelectorAll('[data-req]').forEach(function(el){var v=el.value.trim(),msg='';if(!v)msg=M.req;else if(el.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))msg=M.mail;mark(el,msg);if(msg&&!bad)bad=el;});
+var ph=f.querySelector('[name=fotograf]');if(ph.files[0]&&ph.files[0].size>8*1024*1024){mark(ph,M.big);if(!bad)bad=ph;}
+if(bad){bad.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){bad.focus({preventScroll:true});},350);return;}
+btn.disabled=true;var old=btn.textContent;btn.textContent=M.sending;
+fetch('/',{method:'POST',body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.hidden=true;ok.hidden=false;ok.scrollIntoView({block:'center',behavior:'smooth'});}).catch(function(){ne.hidden=false;}).then(function(){btn.disabled=false;btn.textContent=old;});});
+document.getElementById('yp-again').addEventListener('click',function(){f.reset();f.hidden=false;ok.hidden=true;});
+})();</script>
+<script src="/assets/js/bb-chat.js" defer></script>
+</body>
+</html>

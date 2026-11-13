@@ -3,8 +3,8 @@
   if (window.__bbChat) return; window.__bbChat = 1;
   var EN = (document.documentElement.lang || 'tr').toLowerCase().indexOf('en') === 0;
   var R = window.__bbRoute || function (k) {
-    var tr = { home: '/', d3: '/basbaya-3d/', hayal: '/hayalini-anlat/', studio: '/studio/', contact: '/iletisim/', about: '/hakkimizda/' };
-    var en = { home: '/en/', d3: '/en/basbaya-3d/', hayal: '/en/describe-it/', studio: '/en/studio/', contact: '/en/contact/', about: '/en/about/' };
+    var tr = { home: '/', d3: '/basbaya-3d/', hayal: '/hayalini-anlat/', studio: '/studio/', contact: '/iletisim/', about: '/hakkimizda/', parca: '/yedek-parca/' };
+    var en = { home: '/en/', d3: '/en/basbaya-3d/', hayal: '/en/describe-it/', studio: '/en/studio/', contact: '/en/contact/', about: '/en/about/', parca: '/en/spare-parts/' };
     return (EN ? en : tr)[k];
   };
   var TY = 'https://www.trendyol.com/magaza/basbaya-m-1345724';
@@ -26,6 +26,7 @@
   var lStudio = L('Drone hizmetleri', 'Drone services', R('studio'));
   var lPkg = L('Paketleri gör', 'See packages', R('studio') + '#paketler');
   var lContact = L('İletişim formu', 'Contact form', R('contact'));
+  var lParca = L('Yedek parça talebi', 'Request a spare part', R('parca'));
   var lMail = L('info@basbaya.com', 'info@basbaya.com', 'mailto:info@basbaya.com', 1);
 
   // k: anahtar kelimeler (küçük harf, Türkçe karakter sadeleştirilmiş). Uzun eşleşme daha çok puan alır.
@@ -81,10 +82,12 @@
       tr: 'Kurumsal hediye, logolu ürün ve etkinlik hediyelikleri için adetli üretim yapıyoruz. İletişim formunda konu olarak "toplu sipariş"i seç; adet, ölçü ve tarih yazarsan teklifle dönelim.',
       en: 'We do batch production for corporate gifts, branded items and event giveaways. Pick "bulk order" on the contact form with quantity, size and date and we\'ll send a quote.',
       links: [lContact] },
-    { id: 'parca', k: ['yedek parca', 'parca', 'aparat', 'olculu', 'prototip', 'tutucu', 'kirilan', 'spare part', 'prototype', 'replacement'],
-      tr: 'Tutucu, aparat, yedek parça ya da ürün prototipi gibi ölçüye bağlı parçaları ölçülerine göre tasarlayıp basıyoruz. Ölçüleri ve varsa fotoğrafıyla bize yaz.',
-      en: 'We design and print measured parts: holders, brackets, spare parts and prototypes. Send us the dimensions and a photo if you have one.',
-      links: [lContact, lMail] },
+    { id: 'parca', k: ['yedek parca', 'parca', 'aparat', 'olculu', 'prototip', 'tutucu', 'kirilan', 'kirildi', 'bulunmuyor', 'bulamiyorum', 'uretimden kalkti', 'klips', 'kapak', 'menteşe', 'mentese', 'tekerlek', 'kulp', 'spare part', 'prototype', 'replacement', 'broke', 'discontinued'],
+      tr: 'Kırılan, kaybolan ya da üretimden kalktığı için bulunamayan parçaları ölçüsüne göre tasarlayıp basıyoruz: ev aletleri, mobilya, araç içi klipsler, kumanda kapakları, oyuncak parçaları ve ölçüye özel aparatlar. Yedek Parça sayfasından fotoğraf ve ölçüleriyle talep gönder, fiyatla dönelim. (Fren, gaz hattı gibi güvenlik açısından kritik parçaları basmıyoruz.)',
+      en: 'We redesign and print parts that broke, went missing or are discontinued: appliance fittings, furniture parts, car interior clips, remote covers, toy parts and made-to-measure adapters. Send photos and sizes from the Spare Parts page and we\'ll quote. (We don\'t print safety-critical parts such as brakes or gas lines.)',
+      links: [lParca, lMail] },
+    { id: 'p_dyson', k: ['dyson', 'sac kurutma', 'fon makinesi', 'hair dryer'], tr: 'Dyson uyumlu saç kurutma makinesi standımız var: kaymaz taban, kablo düzeni ve başlıklar için saklama yeri, dört renk seçeneği. Trendyol\'da:', en: 'We make a Dyson-compatible hair dryer stand: non-slip base, cable management and attachment storage, in four colours. On Trendyol:', links: [L('Dyson uyumlu stand', 'Dyson-compatible stand', 'https://www.trendyol.com/basbaya/hair-dryer-uyumlu-sac-kurutma-makinesi-standi-p-1209114347', 1)] },
+    { id: 'p_supurge', k: ['supurge', 'koltuk arasi', 'dar uc', 'pencere rayi', 'ray temizleme', 'vacuum', 'crevice', 'window track'], tr: 'Ekstra ince, 25 cm uzunluğunda süpürge ucumuz var: koltuk aralarına, pencere raylarına ve dar aralıklara uzanıyor. Süpürgen için başka bir aparat ya da kırık bir parça lazımsa yedek parça talebi de gönderebilirsin.', en: 'We make an extra-slim 25 cm vacuum nozzle for sofa gaps, window tracks and tight spaces. Need a different fitting or a broken part for your vacuum? Send a spare part request.', links: [L('Süpürge ucu', 'Crevice tool', 'https://www.trendyol.com/basbaya/ekstra-ince-uzun-supurge-ucu-25-cm-pencere-rayi-ve-dar-aralik-temizleme-aparati-p-1217241453', 1), lParca] },
     { id: 'drone', k: ['drone', 'dron', 'havadan', 'hava cekimi', 'cekim', 'video', 'aerial', 'shoot', 'filming'],
       tr: 'Basbaya Studio ile İstanbul ve çevresinde havadan fotoğraf ve video çekiyoruz: düğün ve nişan, organizasyon, inşaat takibi, emlak ve arsa, otel ve restoran, kurumsal tanıtım, sosyal medya/reels, tarım ve özel günler. Çekip kurguluyor, paylaşıma hazır teslim ediyoruz.',
       en: 'With Basbaya Studio we shoot aerial photo and video in Istanbul and nearby: weddings, events, construction progress, real estate, hotels and restaurants, corporate, social media/reels, farmland and family occasions. We shoot, edit and deliver ready to post.',
