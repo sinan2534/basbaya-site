@@ -1,0 +1,26 @@
+BASBAYA SİTESİ – KURULUM
+========================
+
+1) NETLIFY'A YÜKLE
+   - https://app.netlify.com adresinde ücretsiz hesap aç.
+   - https://app.netlify.com/drop sayfasını aç.
+   - Bu "basbaya-site" KLASÖRÜNÜ (zip'i değil, açılmış klasörü) sayfaya sürükle-bırak.
+   - Birkaç saniyede site xxxx.netlify.app adresinde yayına girer.
+   - Site ayarlarından adı "basbaya" yap (basbaya.netlify.app).
+
+2) FORMLARI AÇ
+   - Netlify'da sitenin içinde: Forms > "Enable form detection".
+   - Klasörü bir kez daha Deploys sayfasının altına sürükle-bırak (formlar ancak yeni yüklemede algılanır).
+   - Forms > Form notifications > Email notification > info@basbaya.com ekle.
+   - Gelen formlar: iletisim, drone-teklif, hayal.
+
+3) basbaya.com'U BAĞLA
+   - Netlify: Domain management > Add a domain > basbaya.com
+   - Squarespace > Alan Adları > basbaya.com > DNS:
+       A     @     75.2.60.5
+       CNAME www   basbaya.netlify.app   (Netlify'daki site adın neyse)
+   - @ ve www için olan ESKİ A/CNAME (Squarespace varsayılan) kayıtlarını sil.
+   - MX, TXT (google-site-verification, SPF) ve Google Workspace kayıtlarına DOKUNMA – e-posta bunlarla çalışıyor.
+   - Değişikliğin yayılması birkaç saat (en fazla 48 saat) sürebilir. HTTPS sertifikasını Netlify kendisi kurar.
+
+NOT: index.html dosyasına bilgisayarda çift tıklayınca site düzgün açılmaz; site ancak bir sunucuda (Netlify) çalışır.
