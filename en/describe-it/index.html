@@ -71,6 +71,13 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
   #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
   #app nav .bb-backdrop{display:none!important}
 }
+/*BTN*/#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]{background:#F27A1A!important;border-color:#F27A1A!important;color:#FFFFFF!important}
+#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]:hover{background:#E0650A!important}
+#app a[href*="trendyol.com"] span[style*="margin-top: 4px"],#app .yp-prod span{color:#C2570C!important}
+#app a[href*="trendyol.com"] span[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"]{background:#F27A1A!important;color:#FFFFFF!important}
+#app a.yp-btn.yp-line[href*="trendyol.com"]{border-color:#F27A1A!important;color:#C2570C!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger),#app .yp-btn.yp-dark{background:#1E3A8A!important;border-color:#1E3A8A!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger):hover,#app .yp-btn.yp-dark:hover{background:#2747A8!important}/*/BTN*/
 /*BRAND*/#app a[aria-label] img[alt="Basbaya"]{height:15px!important}
 #app a[aria-label] img[alt=""][src*="icon_"]{height:36px!important}
 #app a[aria-label] span > img[alt="Basbaya"]{height:14px!important}
@@ -111,5 +118,6 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
 
 <script type="module" src="/assets/js/main.js"></script>
 <script src="/assets/js/bb-chat.js" defer></script>
+<script src="/assets/js/bb-vision.js?v=3" defer data-bbv="1"></script>
 </body>
 </html>
