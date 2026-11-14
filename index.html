@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basbaya – 3D Tasarım, Üretim ve Drone Çekim | İstanbul</title>
-<meta name="description" content="Basbaya, İstanbul'da 3D baskı ürünler tasarlayıp üreten ve Basbaya Studio ile İstanbul ve çevresinde drone çekimi yapan bir ekip.">
-<link rel="canonical" href="https://basbaya.com/">
-<link rel="alternate" hreflang="en" href="https://basbaya.com/en/">
-<link rel="alternate" hreflang="tr" href="https://basbaya.com/">
-<meta property="og:title" content="Basbaya – 3D Tasarım, Üretim ve Drone Çekim | İstanbul">
-<meta property="og:description" content="Basbaya, İstanbul'da 3D baskı ürünler tasarlayıp üreten ve Basbaya Studio ile İstanbul ve çevresinde drone çekimi yapan bir ekip.">
+<title>Basbaya 3D – 3D Baskı Ürünler</title>
+<meta name="description" content="Masaüstü düzenleyiciler, dekoratif objeler, fidget ve hediyelikler. İstanbul atölyemizde tasarlanıp basılıyor.">
+<link rel="canonical" href="https://basbaya.com/basbaya-3d/">
+<link rel="alternate" hreflang="en" href="https://basbaya.com/en/basbaya-3d/">
+<link rel="alternate" hreflang="tr" href="https://basbaya.com/basbaya-3d/">
+<meta property="og:title" content="Basbaya 3D – 3D Baskı Ürünler">
+<meta property="og:description" content="Masaüstü düzenleyiciler, dekoratif objeler, fidget ve hediyelikler. İstanbul atölyemizde tasarlanıp basılıyor.">
 <meta property="og:image" content="https://basbaya.com/assets/img/drone.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -71,6 +71,13 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
   #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
   #app nav .bb-backdrop{display:none!important}
 }
+/*BTN*/#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]{background:#F27A1A!important;border-color:#F27A1A!important;color:#FFFFFF!important}
+#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]:hover{background:#E0650A!important}
+#app a[href*="trendyol.com"] span[style*="margin-top: 4px"],#app .yp-prod span{color:#C2570C!important}
+#app a[href*="trendyol.com"] span[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"]{background:#F27A1A!important;color:#FFFFFF!important}
+#app a.yp-btn.yp-line[href*="trendyol.com"]{border-color:#F27A1A!important;color:#C2570C!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger),#app .yp-btn.yp-dark{background:#1E3A8A!important;border-color:#1E3A8A!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger):hover,#app .yp-btn.yp-dark:hover{background:#2747A8!important}/*/BTN*/
 /*BRAND*/#app a[aria-label] img[alt="Basbaya"]{height:15px!important}
 #app a[aria-label] img[alt=""][src*="icon_"]{height:36px!important}
 #app a[aria-label] span > img[alt="Basbaya"]{height:14px!important}
@@ -106,14 +113,11 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!import
 </style>
 </head>
 <body>
-<div id="app" data-page="Main"></div>
+<div id="app" data-page="Basbaya3D"></div>
 <noscript><p style="font-family:sans-serif;padding:24px">Basbaya · info@basbaya.com · <a href="https://www.trendyol.com/magaza/basbaya-m-1345724">Trendyol</a></p></noscript>
-<div hidden aria-hidden="true">
-<form name="iletisim" data-netlify="true" netlify-honeypot="bot-field"><input name="bot-field"><input name="ad"><input name="eposta"><select name="konu"><option>x</option></select><textarea name="mesaj"></textarea></form>
-<form name="drone-teklif" data-netlify="true" netlify-honeypot="bot-field"><input name="bot-field"><input name="hizmetler"><input name="paket"><input name="tarih"><input name="lokasyon"><input name="ad"><input name="telefon"><input name="eposta"><textarea name="mesaj"></textarea></form>
-<form name="hayal" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data"><input name="bot-field"><textarea name="fikir"></textarea><input name="tur"><input name="boyut"><input name="renk"><input type="file" name="referans"><input name="eposta"><input name="model_link"></form>
-</div>
+
 <script type="module" src="/assets/js/main.js"></script>
 <script src="/assets/js/bb-chat.js" defer></script>
+<script src="/assets/js/bb-vision.js?v=3" defer data-bbv="1"></script>
 </body>
 </html>

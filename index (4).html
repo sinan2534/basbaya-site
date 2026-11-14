@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basbaya 3D – 3D Printed Products</title>
+<meta name="description" content="Desk organisers, decor, fidgets and gifts, designed and printed in our Istanbul workshop.">
+<link rel="canonical" href="https://basbaya.com/en/basbaya-3d/">
+<link rel="alternate" hreflang="tr" href="https://basbaya.com/basbaya-3d/">
+<link rel="alternate" hreflang="en" href="https://basbaya.com/en/basbaya-3d/">
+<meta property="og:title" content="Basbaya 3D – 3D Printed Products">
+<meta property="og:description" content="Desk organisers, decor, fidgets and gifts, designed and printed in our Istanbul workshop.">
+<meta property="og:image" content="https://basbaya.com/assets/img/drone.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1E4E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F6FA}
+a{color:#0A1433}a:hover{color:#2B3F8C}
+@keyframes bbRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes bbIn{from{opacity:0}to{opacity:1}}
+@keyframes bbKen{from{transform:scale(1.12)}to{transform:scale(1.0)}}
+@keyframes bbText{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes bbReveal{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
+@keyframes bbScale{from{transform:scale(.82);border-radius:80px}to{transform:scale(1);border-radius:36px}}
+@keyframes bbBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.bb-rise{animation:bbRise .9s cubic-bezier(.2,.7,.2,1) both}
+.bb-d1{animation-delay:.12s}.bb-d2{animation-delay:.24s}.bb-d3{animation-delay:.36s}
+.bb-slide{animation:bbIn .8s ease both}
+.bb-ken{animation:bbKen 6s ease-out both}
+.bb-text{animation:bbText .8s .25s cubic-bezier(.2,.7,.2,1) both}
+.bb-bar{transform-origin:left center;animation:bbBar 5s linear both}
+@supports (animation-timeline: view()){
+.bb-reveal{animation:bbReveal linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.bb-scale{animation:bbScale linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+}
+@media (prefers-reduced-motion: reduce){.bb-rise,.bb-slide,.bb-ken,.bb-text,.bb-bar,.bb-reveal,.bb-scale{animation:none!important}}
+a,button,[role=tab]{transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s ease,filter .2s ease,background-color .2s ease,border-color .2s ease}
+a[style*="border-radius: 999px"]:hover,button:hover{box-shadow:0 10px 26px rgba(10,20,51,.22);filter:brightness(1.08)}
+a:active,button:active{box-shadow:0 0 0 6px rgba(76,123,244,.28)}
+:focus-visible{outline:3px solid #4C7BF4;outline-offset:3px;border-radius:12px}
+nav a:hover{background-color:rgba(127,140,180,.16)}
+a[style*="overflow: hidden"] img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+a[style*="overflow: hidden"]:hover img{transform:scale(1.05)}
+a[style*="overflow: hidden"]:hover{box-shadow:0 24px 60px rgba(10,20,51,.28)}
+a img[style*="aspect-ratio"]{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+a:hover img[style*="aspect-ratio"]{transform:scale(1.02);box-shadow:0 18px 44px rgba(10,20,51,.22)}
+input,select,textarea{transition:border-color .2s ease,box-shadow .2s ease}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0A1433!important;box-shadow:0 0 0 4px rgba(76,123,244,.25)}
+@media (prefers-reduced-motion: reduce){a,button,img{transition:none!important}}
+.bb-backdrop:hover,.bb-backdrop:active{transform:none!important;box-shadow:none!important;filter:none!important}
+
+#app{min-height:100vh}
+#app .bb-bad{border-color:#D64545!important;box-shadow:0 0 0 3px rgba(214,69,69,.18)!important}
+#app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(44px,min(6.2vw,10.5vh),88px)!important;letter-spacing:-0.03em!important}
+#app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,min(5vw,9vh),64px)!important;letter-spacing:-0.025em!important}
+#app [style*="font-size: 64px"],#app [style*="font-size: 60px"],#app [style*="font-size: 56px"]{font-size:clamp(32px,4vw,52px)!important;letter-spacing:-0.02em!important}
+#app [style*="font-size: 52px"],#app [style*="font-size: 48px"],#app [style*="font-size: 44px"]{font-size:clamp(28px,3.2vw,42px)!important}
+@media (max-width: 1220px){
+  #app nav{border-radius:24px!important;padding:8px 8px 8px 16px!important;justify-content:space-between!important;flex-wrap:wrap!important}
+  #app nav .bb-burger{display:flex!important}
+  #app nav > div{display:none!important;width:100%;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:8px 4px 6px!important;font-size:16px!important}
+  #app nav[data-open="true"] > div{display:flex!important}
+  #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
+  #app nav > div > span[aria-hidden]{display:none!important}
+  #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
+}
+/*BTN*/#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]{background:#F27A1A!important;border-color:#F27A1A!important;color:#FFFFFF!important}
+#app a[href*="trendyol.com"][style*="background: rgb(10, 20, 51)"]:hover{background:#E0650A!important}
+#app a[href*="trendyol.com"] span[style*="margin-top: 4px"],#app .yp-prod span{color:#C2570C!important}
+#app a[href*="trendyol.com"] span[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"]{background:#F27A1A!important;color:#FFFFFF!important}
+#app a.yp-btn.yp-line[href*="trendyol.com"]{border-color:#F27A1A!important;color:#C2570C!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger),#app .yp-btn.yp-dark{background:#1E3A8A!important;border-color:#1E3A8A!important}
+#app :is(a,button)[style*="border-radius: 999px"]:is([style*="background: rgb(10, 20, 51)"],[style*="background: rgb(15, 30, 78)"]):not([href*="trendyol.com"]):not(.bb-burger):hover,#app .yp-btn.yp-dark:hover{background:#2747A8!important}/*/BTN*/
+/*BRAND*/#app a[aria-label] img[alt="Basbaya"]{height:15px!important}
+#app a[aria-label] img[alt=""][src*="icon_"]{height:36px!important}
+#app a[aria-label] span > img[alt="Basbaya"]{height:14px!important}
+@media (min-width: 1221px) and (max-width: 1380px){#app nav > div{gap:2px!important}#app nav > div > a:not([style*="background: rgb(10"]):not([style*="#0A1433"]){padding:10px 10px!important}#app nav > div > span[aria-hidden]{margin:0 4px!important}#app nav{gap:10px!important;padding-left:18px!important}}
+/*/BRAND*/
+@media (max-width: 760px){
+  #app [style*="font-size: 112px"],#app [style*="font-size: 104px"]{font-size:clamp(42px,12vw,64px)!important;letter-spacing:-1.5px!important;line-height:1!important}
+  #app [style*="font-size: 84px"],#app [style*="font-size: 76px"],#app [style*="font-size: 72px"]{font-size:clamp(38px,11vw,56px)!important;letter-spacing:-1.5px!important;line-height:1.02!important}
+  #app [style*="font-size: 64px"],#app [style*="font-size: 60px"],#app [style*="font-size: 56px"]{font-size:clamp(34px,10vw,48px)!important;letter-spacing:-1px!important;line-height:1.04!important}
+  #app [style*="font-size: 52px"],#app [style*="font-size: 48px"],#app [style*="font-size: 44px"]{font-size:clamp(30px,8.5vw,40px)!important;letter-spacing:-1px!important}
+  #app [style*="font-size: 40px"],#app [style*="font-size: 36px"],#app [style*="font-size: 34px"]{font-size:28px!important}
+  #app section,#app footer > div,#app header{padding-left:16px!important;padding-right:16px!important}
+  #app section[style*="padding: 104px"],#app div[style*="padding: 104px"],#app div[style*="padding: 96px"],#app section[style*="padding: 96px"]{padding-top:64px!important;padding-bottom:64px!important}
+  #app [style*="padding: 56px"],#app [style*="padding: 52px 48px"],#app [style*="padding: 48px"],#app [style*="padding: 44px"]{padding:28px!important}
+  #app nav{border-radius:24px!important;padding:8px 8px 8px 16px!important;justify-content:space-between!important;flex-wrap:wrap!important}
+  #app nav .bb-burger{display:flex!important}
+  #app nav > div{display:none!important;width:100%;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:8px 4px 6px!important;font-size:16px!important}
+  #app nav[data-open="true"] > div{display:flex!important}
+  #app nav > div > a{padding:12px 14px!important;border-radius:14px!important}
+  #app nav > div > span[aria-hidden]{display:none!important}
+  #app nav > div > div,#app nav > div > dc-import{align-self:flex-start}
+  #app nav > div > div[style*="position: relative"]{align-self:stretch!important}
+  #app nav [role=menu]{position:static!important;min-width:0!important;width:100%!important;box-sizing:border-box;margin-top:8px;box-shadow:none!important}
+  #app nav .bb-backdrop{display:none!important}
+  #app span[style*="letter-spacing: 3px"]{letter-spacing:1.5px!important}
+  #app [style*="height: 620px"],#app [style*="height: 640px"]{height:460px!important}
+  #app [style*="height: 600px"]{height:380px!important}
+  #app [style*="min-height: 760px"]{min-height:620px!important}
+  #app .bb-text{left:24px!important;right:24px!important;bottom:84px!important}
+  #app [role=tablist][style*="left: 56px"]{left:24px!important}
+  #app [role=dialog]{border-radius:20px!important}
+}
+</style>
+</head>
+<body>
+<div id="app" data-page="Basbaya3D_en"></div>
+<noscript><p style="font-family:sans-serif;padding:24px">Basbaya · info@basbaya.com · <a href="https://www.trendyol.com/magaza/basbaya-m-1345724">Trendyol</a></p></noscript>
+
+<script type="module" src="/assets/js/main.js"></script>
+<script src="/assets/js/bb-chat.js" defer></script>
+<script src="/assets/js/bb-vision.js?v=3" defer data-bbv="1"></script>
+</body>
+</html>
