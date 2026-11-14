@@ -1,6 +1,7 @@
 /* Basbaya – ücretsiz fotoğraf tanıma (MobileNet, müşterinin tarayıcısında çalışır; fotoğraf hiçbir yere gönderilmez). */
 (function () {
   if (window.__bbMerge) return;
+  try { var st = document.createElement('style'); st.textContent = '.bb-opt summary::-webkit-details-marker{display:none}.bb-opt .bb-opt-ic{transition:transform .2s}.bb-opt[open] .bb-opt-ic{transform:rotate(45deg)}'; document.head.appendChild(st); } catch (e) {}
   var TF = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js';
   var MN = 'https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js';
   var modelP = null;
