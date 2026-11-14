@@ -109,8 +109,12 @@
     return window.__bbClassify(blob).catch(function (e) { failed = true; try { console.warn('[bb-vision] model yüklenemedi', e); } catch (x) {} return null; }).then(function (v) {
       if (!v) {                                  // model yüklenemedi ya da fotoğraftan emin değil → sadece yazılana göre
         if (!d.queries.length) return null;
-        return { d: d, src: en ? (failed ? 'BASED ON YOUR TEXT · photo recognition could not load' : 'BASED ON YOUR TEXT · photo was not clear enough')
-                               : (failed ? 'YAZDIĞINA GÖRE · fotoğraf tanıma yüklenemedi' : 'YAZDIĞINA GÖRE · fotoğraf net tanınamadı') };
+        return { d: d, src: en ? 'BASED ON YOUR TEXT' : 'YAZDIĞINA GÖRE',
+          desc: failed
+            ? (en ? '⚠️ Photo recognition could not load right now, so we searched by what you wrote.'
+                  : '⚠️ Fotoğraf tanıma şu an yüklenemedi, yazdığına göre aradık.')
+            : (en ? '📷 We couldn’t spot a familiar product in your photo, so we searched by what you wrote. For better results, upload a close-up photo of the product on its own.'
+                  : '📷 Fotoğrafında tanıdık bir ürün bulamadık, yazdığına göre aradık. Daha iyi sonuç için ürünün tek başına, yakından çekilmiş bir fotoğrafını yükle.') };
       }
       var name = trName(v, en);
       var photoQ = [v.term + ' 3d print', v.short + ' 3d model', v.term];
