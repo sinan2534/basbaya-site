@@ -223,7 +223,7 @@ f.querySelectorAll('[data-req]').forEach(function(el){var v=el.value.trim(),msg=
 var ph=f.querySelector('[name=fotograf]');if(ph.files[0]&&ph.files[0].size>8*1024*1024){mark(ph,M.big);if(!bad)bad=ph;}
 if(bad){bad.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){bad.focus({preventScroll:true});},350);return;}
 btn.disabled=true;var old=btn.textContent;btn.textContent=M.sending;
-fetch('/',{method:'POST',body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.hidden=true;ok.hidden=false;ok.scrollIntoView({block:'center',behavior:'smooth'});}).catch(function(){ne.hidden=false;}).then(function(){btn.disabled=false;btn.textContent=old;});});
+(function(){var d=new FormData(f);if(d.get('bot-field'))return Promise.resolve({ok:true});d.delete('bot-field');d.set('_subject','Basbaya web formu: yedek-parca');d.set('_template','table');d.set('_captcha','false');return fetch('https://formsubmit.co/ajax/info@basbaya.com',{method:'POST',body:d,headers:{Accept:'application/json'}});})().then(function(r){if(!r.ok)throw 0;f.hidden=true;ok.hidden=false;ok.scrollIntoView({block:'center',behavior:'smooth'});}).catch(function(){ne.hidden=false;}).then(function(){btn.disabled=false;btn.textContent=old;});});
 document.getElementById('yp-again').addEventListener('click',function(){f.reset();f.hidden=false;ok.hidden=true;});
 })();</script>
 <script src="/assets/js/bb-chat.js" defer></script>
